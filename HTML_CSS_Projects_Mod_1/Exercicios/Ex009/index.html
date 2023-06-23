@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas OL e UL</title>
+</head>
+<body>
+    
+    <a href="../../../Personal_project/Hub.html">HUB</a>
+
+    <h1>Lista dos meus jogos favoritos</h1>
+
+    <p>
+        <ul>
+            <li>Nintendinho</li>
+            <ol>
+                <li>Mario Bros</li>
+                <ul type="square">
+                    <li>Super Mario Bros 3</li>
+                    <li>Mario:Lost Levels</li>
+                </ul>
+                <li>Ninja Gaiden</li>
+                <ul type="square">
+                    <li>Ninja Gainden III</li>
+                </ul>
+            </ol>
+            <li>Super Nintendo</li>
+            <ol>
+                <li>Super Mario World</li>
+                <li>Donkey Kong</li>
+                <ul type="square">
+                    <li>Donkey Kong Counrtry III</li>
+                    <li>Diddy's Kong Quest</li>
+                </ul>
+            </ol>
+            <li>Playstation 1</li>
+            <ol>
+               <li>Final Fantasy</li>
+               <ul type="square">
+                    <li> Final Fantasy VII</li>
+                    <li> Final Fantasy IX</li> 
+               </ul>
+               <li>Castelvania</li>
+               <ul type="square">
+                    <li>Simphony of the Night</li>
+               </ul>
+            </ol>
+        </ul>
+    </p>
+
+    <h1>Trabalhando Com listas</h1>
+
+    <hr>
+
+    <h2>Listas ordenadas</h2>
+
+    <p> Listas ordenadas, OL(ordered list), são listas onde  é aplicada uma ordem sequência nos itens, li(list item). Ex: <br>
+    <ol type="I">
+        <li>Acordar</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar o café da manhã</li>
+        <li>...</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+    </ol>
+    Assim caso necessite alterações é so introduzi-las entre os elementos e ela será rearanjada. Outroa ponto é que o &lt;/li&gt; se tornou opicional na versão HTML 5. Os modificadores do parâmetro 'type' são, 1,A,a,I,i, tendo também o parâmetro start, para indicar onde a lista começara.
+    </p>
+    
+    <hr>
+
+    <h2>Listas não ordenadas</h2>
+    
+    <p> Listas não ordenadas, Ul(Unordered list), são listas onde não tem uma distinção da ordem dos elementos da lista. Ex: <br>
+    <ul type="circle">
+        <li>Acordar</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar o café da manhã</li>
+        <li>...</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+    </ul>
+    Os modificadores do parâmetro 'type' são: disc, circle, square, não tem parâmetro start
+    </p>
+
+    <hr>
+
+    <h2>Listas Mistas</h2>
+    
+    <p>Listas mistas são listas que misturam tanto listas ordenadas quando não ordenadas, ou somente um tipo, mas dando niveis para as mesmas. Ex: <br>
+        <ol>
+            <li>Exemplo 1</li>
+            <li>Exemplo 2</li>
+            <ul>
+                <li>Exemplo 1</li>
+                <li>Exemplo 2</li>
+                <li>Exemplo 3</li>
+                <ol type="a">
+                    <li>Exemplo 1</li>
+                    <li>Exemplo 2</li>
+                </ol>
+            </ul>
+            <li>Exemplo 3</li>
+            <ul>
+                <li>Exemplo 1</li>
+                <ol type="a" start="3">
+                    <li>Exemplo 1</li>
+                </ol>
+            </ul>
+        </ol>
+    </p>
+
+    <hr>
+
+    <h2>Lista de Definições</h2>
+
+    <p>As listas definições,dl (definition list) são parecidadas com dicionários, mas inves de itens a lista, terá pares de definições de termos,dt (definition term), e  definições de descrição, dd (definition description). Ex: <br>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language - Linguagem de marcação para a criação do conteúdo do site.</dd>
+        <dt>CSS</dt>
+        <dd>Cascate Style Sheets - linguagem de marcação para  criação do design do site.</dd>
+        <dt>JS</dt>
+        <dd>JavaScript - Linguagem de programação usada para criar interatividade no site.</dd>
+    </dl>
+    
+    </p>
+</body>
+</html>
+<!--
+    Indentação ou Aninhamento é a forma de organização do código, dando precedencias de escopo a ele, Global - nivel 1 - nivel 2 - etc, similar a ideia das listas mistas.
+    É possivel com o parâmetro start dar continuidade a listas anteriores de mesmo nivel, como visto no exemplo
+-->

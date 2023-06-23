@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @font-face {
+      font-family: "Hanken";
+      src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format(truetype);
+      font-weight: normal;
+    }
+
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body{
+      font-family: "Hanken";
+      padding: 200px 0px 200px 0px;
+    }
+
+    section{
+      height: 520px;
+      width: 750px;
+      border-radius: 30px;
+      box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.05);
+      display: flex;
+      padding: 0px;
+      margin: auto;
+
+    }
+    #left{
+      height: 440px;
+      width: 295px;
+      background-image: linear-gradient(to bottom, #6743ff, #312ceb);
+      border-radius: 30px;
+      padding: 40px;
+      color: #cac7ff;
+      text-align: center;
+      
+    }
+
+    #left > h1{
+      color: white;
+      font-size: 25px;
+      margin: 0px auto 20px auto;
+    }
+
+    #left > p{
+      width: 240px;
+      margin: auto;
+      text-align: center;
+    }
+
+    #circle{
+      height: 200px;
+      width: 200px;
+      background-image: linear-gradient(to top, transparent, #4f24cc);
+      border-radius: 100px;
+      margin: 40px auto;
+      padding: 0px;
+    }
+
+    #circle h1{
+      color: white;
+      font-size: 65px;
+      padding: 45px 0px 0px 0px;
+      margin: 0px auto -5px auto;
+    }
+
+    #right{
+      height: 440px;
+      width: 295px;
+      padding: 40px;
+    }
+    
+    .contaider{
+      height: 20px;
+      width: 260px;
+      border-radius: 10px;
+      margin: 15px auto;
+      padding: 20px;
+    }
+
+    .reaction{
+      background-color: #FFF6F5;
+    }
+
+    .memory{
+      background-color: #FFFBF2;
+    }
+
+    .verbal{
+      background-color: #F2FAFA;
+    }
+
+    .visual{
+      background-color: #F3F3FD;
+    }
+
+    button{
+      background-color: #303B59;
+      text-align:center;
+      height: 60px;
+      width:300px ;
+      border-radius: 30px;
+      color: white;
+      font-size: 18px;
+    }
+
+  </style>
+</head>
+<body>
+<main>
+  <section>
+    <article id="left">
+      <h2>Your Result</h2>
+      <div id="circle">
+        <h1>76</h1>
+        <p>of 100</p>
+      </div>
+      <h1>Great</h1>
+      <p>You scored higher than 65% of the people who have taken these tests.</p>
+    </article>
+    
+    <article id="right">
+      <h2>Summary</h2>
+      <div class="contaider reaction">
+        Reaction
+        80 / 100
+      </div>
+      <div class="contaider memory">
+        Memory
+        92 / 100
+      </div>
+      <div class="contaider verbal">
+        Verbal
+        61 / 100
+      </div >
+      <div class="contaider visual">
+        Visual
+        72 / 100
+      </div>
+      <button>Continue</button>
+    </article>
+
+  </section>
+
+  
+</main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Willian Antunes</a>.
+  </div>
+</body>
+</html>

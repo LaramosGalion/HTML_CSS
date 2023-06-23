@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <a href="../../../Personal_project/Hub.html">HUB</a>
+
+    <h1>Imagens dinâmicas</h1>
+
+    <p>O acesso do usuário será feito em mult-plataformas, assim tendo diferentes tamanhos de telas, assim sendo deve-se adaptar as imagens de acordo a elas, mas usar CSS para modificar uma um unica imagem em alta resoulção ou usar um tamanho medio é pouco efetivo, pois afetara negativamente o SEO por deixar o site lento e pesado, para isso usaremos tamanhos especificos para cada tipo de plataforma.</p>
+
+    <hr>
+
+   <p>Imagens de todos os tamanhos</p>
+
+   <!-- <p>
+    <img src="Imagens/Imagem_300.png" alt="Pequena">
+   
+    <img src="Imagens/Imagem_700.png" alt="Media">
+ 
+    <img src="Imagens/Imagem_1000.png" alt="Grande">
+   </p> -->
+   
+   <hr>
+
+    <p>Imagem adaptativa - usando a tag &lt;picture&gt;, em que ela permite a criação de varios atributos source. Esse é um dos principais fundamentos do UX desing, tentar agradar visualmente ao maximo o usuário, pois a saida de usuários da plataforma(site) gera uma bounce rate(taxa de desistência) e taxas altas dessas indicam um site ruim para o SEO.</p>
+
+    <p>Dentro da tag picture é indroduzido a tag &lt;source:media:type&gt;, em que é efetuada uma hierarquia de imagems, o primeiro source é feito para que caso a imagem media seja desproporcional a tela será introduzida a pequena, o segundo é se caso a grande for desproporcional será indroduzida a média, e o ultima tag é a propria img com o src da imagem grande, isso para o max width - ordem crescente - source pequena - source media - img grande. <br>Caso use o min width a ordem será inversa - source grande - source media - img pequena. <br> Em source há 3 atributos, media - onde é aplicado o tamanho da imagem para que caso seja necessario seja executada(normalmente de +25px a +50px da imagem anterior no max e da mesma imagem no min ), srcset - onde indica o local da imagem, type - indicando o tipo do arquivo
+    </p>
+
+   <hr>
+
+   <p>Ordem crescente</p>
+
+    <picture>
+
+        <source media="(max-width:750px )" srcset="Imagens/Imagem_300.png" type="image/png">
+
+        <source media="(max-width: 1050px )" srcset="Imagens/Imagem_700.png" type="image/png">
+
+        <img src="Imagens/Imagem_1000.png" alt="Imagem flexivel">
+
+    </picture>
+
+    <hr>
+
+    <p>Ordem decrecente</p>
+
+    <picture>
+        
+        <source media="(min-width: 1050px)" srcset="Imagens/Imagem_1000.png" type="image/png">
+
+        <source media="(min-width:750px)" srcset="Imagens/Imagem_700.png" type="image/png">
+
+        <img src="Imagens/Imagem_300.png" alt="Imagem flexivel">
+
+    </picture>
+    
+    <hr>
+
+    <h1>Reproduzindo áudio</h1>
+
+    <p>Indrodução de áudios no HTML, primeiramente relembrando que as mesmas características de diretos de imagems, como também de tamanho(áudios pesados tormam o site pesado e assim prejudicando no SEO.) se aplicam á áudios, assim devesse ter um cuidado extremo sobre o uso deles. É possivel usar os áudios do Youtube studio(usase a tag audio).</p>
+    
+    <audio preload="none" src="Media/audio_low.mp3" controls autoplay loop>Low</audio>
+
+    <p> Os formatos com compatibilidade são MP3, WAV(muito pesado) e OGG(open source), na tag audio tem o atributo src, onde é indicado o arquivo ou link para ele, pode ter atributos controls, em que exibe os controles para execução do áudio, autoplay que executa automaticamente o áudio.</p>
+
+    <hr>
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="Media/audio_unterned.mp3" type="audio/mpeg">
+        <p> Infelizmente seu navegador não consegue executar o áudio, link para download - <a href="Media/audio_unterned.mp3">MP3</a></p>
+    </audio>
+
+    <p> É possível adicionar a tag audio(dentro dessa tendo os mesmo atributos que no modo anterior, nesse caso adicionou o preload: auto - o site so termina de carregar depois do audio ser baixado, metadata -  so é carregada algumas informações previas, none - não carrega nada, outro atributo é o loop que deixa em loop o audio - não recomendado ) e executar parecidamente com a tag picture(usando tag source:src dentro da audio), em que adiciona varias tags source e em uma sequência hierarquica ira sendo executada cada ação caso a anterior não possa ser feita. Dentro dessa tag &lt;source&gt; é adicionada um atributo  type, agindo igual para links para dowload ou nas imagens, todos os tipos podem ser achados no site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="nofollow">iana</a></p>
+
+</body>
+</html>

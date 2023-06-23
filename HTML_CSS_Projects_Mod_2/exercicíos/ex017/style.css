@@ -1,0 +1,12 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+h1, h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+
+/* safe combination - ter varias fontes para caso uma não funcione haja uma substituta para ela, similar quando tem varios formatos para audios ou videos, neste caso o ideal é usar um termo generico no final*/
+/* sans-serif, serif, monospace são termos genericos que deixara para o dispositivo escolher uma fonte que ele tenha e preencha esse requisito*/
+/* Fontes mais famosas - Arial, Verdana, Helvetica*/

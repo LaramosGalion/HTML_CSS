@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(127, 215, 186);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(0, 111, 72);
+}
+h1#principal{
+    text-align: center;
+    background-color: rgb(0, 111, 72);
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+h2{
+    color: rgb(0, 121, 79);
+}
+p{
+    text-align: justify;
+}
+
+.basico{
+    color: rgb(0, 121, 46);
+    
+}
+.intermediario{
+    color: rgb(101, 121, 0);
+}
+.avancado{
+    color: rgb(121, 0, 0);
+}
+.destaque{
+    background-color: coral;
+}
+#principal:hover{
+    color: black;
+}
+.avancado:hover{
+    color: aliceblue;
+}
+
+h2 > p {
+    background-color: aqua;
+}

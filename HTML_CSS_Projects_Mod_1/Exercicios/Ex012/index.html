@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de videos</title>
+</head>
+<body>
+    <a href="../../../Personal_project/Hub.html">HUB</a>
+
+    <h1>Videos</h1>
+
+    <p>São compativeis com o navegador o MP4/M4V, WEBM e o OGV, sendo o ideal ter varios formatos igual aos audios(Handbraker para converter os videos, parecido com o Gimp para imagens), mesma temática sobre direitos autorais e tamanho de arquivo, dever ter o direito de uso e arquivos equilibrados, evitanto hospedagem local e aquivos demasiadamente pesados, pois gera custos(acima de 1080p nada de hospedagem no proprio site)</p>
+
+    <h2>Vídeos Locais</h2>
+
+    <p>Este vídeo está hospedado localmente, a inserção é similar aos audios(dentro da tag 'video' o source usado será o source:src), mas tendo altura e largura de atributos(height and width), como também a thumbnail com o atributo 'poster'. Esta forma de hospedagem é cara, pois em casos de muitos acessos  mesmo aquivos relativamente pequenos geraram um consumo de banda muito alto, por causa disso o recomendável e o uso de hospedagem externa</p>
+
+    <video poster="imagens/Sem título.png" preload="metadata" height="315" width="560" controls loop autoplay muted>
+
+        <source src="Media/Video Taça.mp4" type="video/mp4">
+
+        <source src="Media/Video Taça.mkv" type="video/mkv">
+
+        <source src="Media/Video Taça.webm" type="video/webm">
+
+        <source src="Media/video_taça_original.mp4" type="video/mp4">
+
+        <p>Desculpe o navegador não suportou o video - link para download - <a href="Media/Video Taça.mp4">Video</a></p>
+
+    </video>
+
+    <h2>Videos Externos</h2>
+
+    <p>Para facilitar o uso dos vídeos para que os mesmo não gerem custos elevados, o ideial é o uso de sites de hospedagem de vídeos, tipo o Youtube, isso é de extrema importância para o SEO, pois o próprio Youtube é o segundo maior buscador</p>
+
+    <h3>Inserindo pelo Youtube</h3>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xJMmCRn7pBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h3>Inserindo pelo Vimeo</h3>
+
+    <p>Pelo vimeo é possivel restringir o acesso, mas acaba perdendo em alguns outros aspectos</p>
+
+    <iframe src="https://player.vimeo.com/video/766323945?h=a4cec3f8b9&color=ffffff&title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
+
+<!-- Solução para o autoplay é a inserção do atributo muted, assim ele iniciara mutado o video -->

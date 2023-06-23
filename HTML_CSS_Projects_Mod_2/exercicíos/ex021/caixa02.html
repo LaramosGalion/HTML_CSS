@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: darkgrey;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            background-color: beige;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: dimgrey;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 5px 5px black;
+        }
+        nav > a{
+            margin: 30px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding: 5px;
+       }
+        nav > a:hover{
+            color: black;
+            outline: 5px groove darkblue;
+            padding: 5px;
+            background-color: white;
+       }
+        main{
+            background-color: beige;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 20px 30px 40px;
+            box-shadow: 4px 4px 1px 3px black;
+        }
+        section > article{
+            background-color: grey;
+            padding: 10px;
+            margin:10px;
+        }
+        article > aside{
+            background-color: rgb(115, 115, 115);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 0px;
+            padding: 5px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        div#disc{
+            width: 500px;
+            height: 500px;
+            border-radius: 250px;
+            background-color: blue;
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>        
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Tecnologia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora hic ipsa iure voluptas! Perspiciatis distinctio perferendis maiores sunt libero dolores ab minus quidem similique cumque est, deleniti dolorem aut expedita?</p>
+            </article>
+        </section>
+
+        <section>
+            
+            <article>
+                <h2>Noticias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rem cumque nulla nesciunt quaerat eveniet illo animi quidem quod delectus? Veritatis obcaecati accusantium consectetur similique voluptatibus quam maxime deserunt fuga!</p>
+                <aside>
+                    <p>Escrito por Laramos</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Laramos</p>
+    </footer>
+    <div id="disc">
+
+    </div>
+</body>
+</html>

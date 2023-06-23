@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Desafio02/favicon (1).ico" type="image/x-icon">
+    <title>Imagem Fléxivel</title>
+</head>
+<body>
+    <a href="../../../Personal_project/Hub.html">HUB</a>
+    <h1>Imagem Fléxivel</h1>
+
+    <p>Você está vendo a imagemc completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência &#x1F92F;</p>
+
+    <picture>
+
+        <source media="(max-width:765px)" srcset="./paisagem-p.png" type="image/png">
+
+        <source media="(max-width:1225px)" srcset="./paisagem-m.png" type="image/png">
+
+        <img src="paisagem-g.png" alt="imagem fléxivel">
+
+    </picture>
+
+</body>
+</html>
+
+<!-- Para acessar imagens que estão dentro da mesma pasta deve se usar './', no atributo srcset. Outro aspecto é que nos tamanhos devesse usar o tamanho da imagem seguinte +25px até +50px, exemplo na media, quando o navegador ficar com  menos de 1225px ele trocara da grande para a media, tendo em vista que a grande é 1200px, assim não dando espaços para a barra lateral ser iniciada -->

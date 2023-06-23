@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>
+        h1{
+            color: darkmagenta;
+        }
+        p{
+            font-size: 14pt;
+        }
+    </style>
+</head>
+<body>
+    
+    <a href="../../../Personal_project/Hub.html">HUB</a>
+    
+    <h1>Principais Formatações</h1>
+
+    <h2>Negrito/Destaque</h2>
+
+    <p>Existem duas formas de adicionar o negrito, sendo semântica e não-semântica:<br>
+        Não semântica(Adiciona somente forma): <b>Exemplo não-semântica</b><br>
+        Semântica(adiciona forma e significado): <strong>Exemplo de semântica</strong><br>
+        Neste caso a tag 'b' somente adiciona o negrito, já a 'strong' da um significado de destaque, sendo semântica, além da forma.
+    </p>
+
+    <hr>
+
+    <h2>Itálico</h2>
+ 
+    <p>Da mesma forma funciona com o itálico <br>
+        Não semântica(Adiciona somente forma): <i>Exemplo não-semântica</i><br>
+        Semântica(adiciona forma e significado): <em>Exemplo de semântica</em><br>
+        Neste caso a tag 'i' somente adiciona o itálico, já a 'em' da um significado de enfâse, sendo semântica, além da forma.
+    </p>
+
+    <hr>
+    
+    <h2>Texto Marcado</h2>
+    
+    <p>Um texto pode ter partes marcadas como exemplo: <br>
+    <mark style="background-color:chartreuse;">Exemplo de texto marcado</mark>, isso age de forma semântica, dando o significado de marcação, mas misturando uma CSS pontual para mudar a cor do marcador, no exemplo seguinte é possivel observar o marcador sem o estilo, demostrando que não é herdado. <br>
+    <mark>Outro exemplo de marcador</mark>
+    </p>
+    <p><strong>OBS. No texto fora modificado a cor do 'h1' como o tamanho da fonte do 'p', assim sendo quando se quer modificar um estilo e usa-lo em todo o escopo do site, esse deve ser configurado previamente na tag 'head'</strong></p>
+
+    <hr>
+
+    <h2>Texto caixa alta e caixa baixa (grande e pequeno)</h2>
+
+    <p>Existem duas formas de aplicar os tamanhos, sendo semântica e não-semântica:<br>
+        Não semântica(Adiciona somente forma e é obsoleta(big)): <big>Exemplo não-semântica</big>,<br>
+        Semântica(adiciona forma e significado):<small>Exemplo semântica</small><br>
+        Neste caso a tag 'big' so mudaria a forma do tamanho e quando so se necessita de um tamanho maior usa-se o CSS, já a small tem um sentido, visto que letras pequenas são necessarias em contratos, observações entre outras impressões finas, dando um significado a continuação do uso da tag.</p>
+
+    <hr>
+
+    <h2>Texto deletado</h2>
+
+    <p>Podemos marcar um texto como excluido para indicar que ele deve ser lido mas não considerado <br>
+    <del>Exemplo de texto excluido</del>. sendo semâtico
+    </p>
+
+    <hr>
+
+    <h2>Texto inserido</h2>
+
+    <p>Podemos marcar um texto como incluido uma ênfase e indicar que ele foi inserido posteriormente <br>
+    <ins>Exemplo de texto inserido</ins>, sendo semâtico <br>
+    <u>Exemplo de texto sublilhado</u>, sendo não-semâtico 
+    </p>
+    
+    <hr>
+
+    <h2>Texto sobrescrito</h2>
+
+    <p>Usado em textos para indicar potência <br>
+    Exemplo de texto sobrescrito: x<sup>10</sup> = 2048, sendo semâtico 
+    
+    </p>
+    
+    <hr>
+    <h2>Texto subscrito</h2>
+
+    <p>Usado para indicar números de atomos em móleculas <br>
+    Exemplo de texto subscrito: H<sub>2</sub>0, sendo semâtico  
+    </p>
+    
+    <hr>
+</body>
+</html>
+<!--
+    Há comandos expansiveis e de comandos de divisão
+    As tags 'b' e 'i' ainda são usadas, mas como somente visam a forma, em algum momento podem vir a ser descontinuadas em um futuro breve
+-->

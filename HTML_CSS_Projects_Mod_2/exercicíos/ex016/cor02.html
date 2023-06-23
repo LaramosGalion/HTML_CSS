@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{  /* CONFIGURAÇÃO GLOBAIS DA CSS */
+            /*  Para não haver a repetição do gradiente e deixa-lo zebrado usase um seletor global(*) que fixa a altura(height=100%) em 100% da tela */
+            /* height:100%; */
+        }
+        body{
+            background-image:linear-gradient(45deg,#FCDA79 10%,#FDD87D,#FF8D4E,#FF383B, #F81567, #EB1788, #C323C5, #7A30E5);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <a href="../../../Personal_project/Hub.html">HUB</a>
+    <h1>Testando Gradiente</h1>
+    <p>Para adicionar o gradiente usasse a declaração 'background-image:linear-gradient'</p>
+    <p>No gradiente é possível direcionar ele com graus, 0-360deg como também com declarações escritas(to top, to right, to left, to bottom), e as cores no mesmo(quantas quiser).Usasse o background-attachment:fixed dentro do seletor em que está sendo aplicado o gradiente, Assim não haverá a repetição do mesmo</p>
+</body>
+</html>

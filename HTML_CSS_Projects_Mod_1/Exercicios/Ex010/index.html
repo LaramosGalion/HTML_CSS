@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Âncoras em HTML5</title>
+</head>
+<body>
+    
+    <a href="../../../Personal_project/Hub.html">HUB</a>
+    
+   <h1>Usando links externos</h1> 
+
+   <p>A introdução de links é feita por meio da tag &lt;a&gt;, o parâmetro(ATRIBUTO) href é hypertext reference, onde será direcionado quando clicar no link, o parâmetro target direciona a abertura do link, podendo ser em uma aba nova, e o rel(relativo), demostra como é a relação entre o link e o site original</p>
+
+    <hr>
+
+    <p>Você pode acessar meu repositorio <a href="https://github.com/LaramosGalion?tab=repositories" target="_blank" rel="external">GitHub</a></p>
+    <p>Também pode acessar meu <a href="https://www.youtube.com/channel/UC2aMVehLdSK7YDbCK57r7Aw" target="_blank"  rel="external">Youtube</a></p>
+
+    <h1>Links internos</h1>
+    
+    <p>Links interno servem para efetuar conexões dentro da própria camada do site </p>
+
+    <hr>
+
+    <p>Está é a pagina inicial do site, caso queria acessar a pagina  1  - > <a href="pag001.html" rel="next" target="_self">pagina 1</a></p>
+    <p>Para <a href="Noticias/pag002.html" rel="next" target="_self">Notícias</a></p>
+
+    <h1>Links para Download</h1>
+
+    <ul>
+        <li><a href="Livros/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Livro em .pdf</a></li>
+        <li><a href="Livros/meulivro.rar" type="application/rar" download="meulivro.rar">Livro em .rar</a></li>
+    </ul>
+
+
+</body>
+</html>
+<!--
+     É recomendado abrir em uma aba nova, pois provavelmente o usuário irá para o proxímo site e provavelmente não voltara no seu, quando for no proprío site não se abre abas novas. Isso é aplicado usando o parâmetro 'target="_blank"', ou para realizar dentro do próprio site(sendo que já efetura isso automaticamente),'target="_self"'
+     O parâmetro rel=next, informa que a proxima paginá será a sequencia dessa.
+     Parâmetro rel=prev, indicá que aquela é a pagina anterior a da que está sendo exibida.
+     Isso aplica sentido ao como é efetuada a navegação
+     Parâmetro rel=Nofollow server para links que não tem seu aval, assim não indexando juntamente ao site.
+     Em href quando deseja deixar um link vazio utiliza '#'
+     No parâmetro type é dado qual tipo de midia(.extensão da midia), facilitando no momento da pesquisa(semântica)
+     Já no 'download' auxilia o download direto em alguns navegadores
+-->
+<!--
+    O ideal é usar o nome ATRIBUTOS para os parâmetros das tags
+-->
