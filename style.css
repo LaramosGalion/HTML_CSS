@@ -23,7 +23,7 @@ body{
 }
 
 main{
-    background-color: rgb(249, 252, 255);
+    background-color: rgba(249, 252, 255, 0.515);
     width: 800px;
     margin: auto;
     padding: 15px;
