@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family:"Maximilian";
+    src: url("../fonte/Maximilian.ttf") format("truetype");
+}
+
+@font-face{
+    font-family:"Maximilian Zier";
+    src: url("../fonte/MaximilianZierbuchstaben.ttf") format("truetype");
+}
+
+*{
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor1:#141C24;
+    --cor2:#3F3F46;
+    --cor3:#472F1D;
+    --cor4_0:#A5671C;
+    --cor4_1:#DDC142;
+    --cor5:#660500;
+    --corFundo:#DFD9BB;
+    --corFonte:#604E3D;
+    --corDecorado:#F66350;
+
+    --fontePadrao:times, serif;
+    --fonteDecorado:"Maximilian";
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+header{
+    width: 100%;
+    min-height: 300px;
+    background-image: linear-gradient(180deg, var(--cor4_1), var(--cor4_0));
+    text-align: center;
+    padding-top: 2em;
+    border-radius: 0px 0px 15% 15%/ 50%;
+    
+}
+
+header h1{
+    font-family:var(--fonteDecorado);
+    font-size: 3em;
+    width: 300px;
+    margin: auto;
+    color:white;
+}
+
+header nav{
+    aspect-ratio: 1/0.2;
+    max-width:500px;
+    background-color: transparent;
+    margin: auto;
+    position: center bottom;
+    
+}
+
