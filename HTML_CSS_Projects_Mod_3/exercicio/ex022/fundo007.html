@@ -11,7 +11,7 @@
 
         #container{
             position: relative;
-            background-color: forestgreen;
+            background-color: rgb(224, 190, 140);
             background-image: url("imagens/target001.png");
             background-size: 100% 100%;
             height: 97vh;
@@ -20,21 +20,30 @@
 
         }
 
-        #conteudo{
+        .olho{
             position: absolute;
             background-color: rgb(221, 221, 221);
             background-image: url("imagens/target001.png");
-            height: 250px;
-            width: 250px;
+            aspect-ratio: 1/1;
+            width: 18%;
             background-size: 100% 100%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(45deg );
-            border-radius: 60% 0% 60% 0%;
+
+            border-radius: 60% 10% 60% 10%;
         }
 
-        #eye{
-            height: 150px;
+        .esquerdo{
+            top: 50%;
+            left: 25%;
+            transform: translate(-50%, -50%) rotate(80deg );
+        }
+        .direito{
+            top: 50%;
+            left: 75%;
+            transform: translate(-50%, -50%) rotate(10deg );
+        }
+
+        .eye{
+            height: 50%;
             aspect-ratio: 1/1;
             background-color: rgb(188, 18, 18);
             position: absolute;
@@ -42,8 +51,20 @@
             left: 50%;
             transform: translate(-50%, -50%);
             border-radius: 50%;
+        }
 
 
+        .boca{
+            position: absolute;
+            background-color: rgb(18, 18, 18);
+            background-image: url("imagens/target001.png");
+            aspect-ratio: 4/1;
+            width: 40%;
+            background-size: 100% 100%;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 20% 20% 60% 60%;
         }
 
     </style>
@@ -51,15 +72,33 @@
 <body>
     <section id="container">
 
-        <article id="conteudo">
+        <article class="olho esquerdo">
 
-            <article id="eye">
+            <article class="eye esquerdo">
 
 
 
             </article>
 
         </article>
+
+        <article class="olho direito">
+
+            <article class="eye direito" >
+
+
+
+            </article>
+
+        </article>
+
+        <article class="boca">
+
+
+
+        </article>
+
+
 
     </section>
 </body>
