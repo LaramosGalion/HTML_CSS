@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso dos iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+        iframe#screen{
+            display: block;
+            aspect-ratio: 2/1;
+            max-width: 600px;
+            width: 80%;
+            border: 5px groove goldenrod;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut id voluptas fugiat nisi ducimus. Ducimus ipsam natus quasi exercitationem placeat voluptas at, saepe modi vero, soluta reprehenderit. Dicta, magni a?</p>
+
+    <ul>
+        <li><a href="paginas_extras/pag01.html" target="tela">Exemplo de Pagína 1</a></li>
+        <li><a href="../../../HTML_CSS_Projects_Mod_3/exercicio/ex023/tabela05.html" target="tela">Exemplo de Pagína 2</a></li>
+        <li><a href="../../../HTML_CSS_Projects_Mod_3/desafio/desafio13/index2.html" target="tela">Exemplo de Pagína 3</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut id voluptas fugiat nisi ducimus. Ducimus ipsam natus quasi exercitationem placeat voluptas at, saepe modi vero, soluta reprehenderit. Dicta, magni a?</p>
+
+    <iframe id="screen" name="tela" srcdoc="
+    <h1> Escolha uma das opções</h1>
+    <p>As opções estão na lista não ordenada</p>
+    <img src='sky_colors.jpg '>" 
+    frameborder="0">
+
+        <p>
+            Infelizmente seu navegador não é compativel com iframes, link para o <a href="">site</a>
+        </p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut id voluptas fugiat nisi ducimus. Ducimus ipsam natus quasi exercitationem placeat voluptas at, saepe modi vero, soluta reprehenderit. Dicta, magni a?</p>
+</body>
+</html>
