@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        
+        input{
+            display:inline;
+            width: 100px;
+        }
+
+        fieldset{
+            width: 200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulários - checkbox e radio button</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+
+            <legend>Sexo</legend>
+
+            <input type="radio" name="sexo" id="imasc" value="M">
+            <label for="imasc">Masculino</label>
+            <input type="radio" name="sexo" id="ifem" value="F">
+            <label for="ifem">Feminino</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+
+            <input type="checkbox" name="futebol" id="ifutebol" checked>
+            <label for="ifutebol">futebol</label>
+            <input type="checkbox" name="basquete" id="ibasquete">
+            <label for="ibasquete">basquete</label>
+            <input type="checkbox" name="volei" id="ivolei">
+            <label for="ivolei">Volei</label>
+            <input type="checkbox" name="natacao" id="inatacao">
+            <label for="inatacao">Natação</label>
+
+            <p>
+            
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </p>
+
+    </form>
+</body>
+</html>
