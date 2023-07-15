@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* Estilo para telas */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+html{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: aquamarine;
+
+}
+
+header > h1{
+    text-align: center;
+    text-shadow: 5px 5px 5px gray;
+}
+
+article{
+    width: 600px;
+}
