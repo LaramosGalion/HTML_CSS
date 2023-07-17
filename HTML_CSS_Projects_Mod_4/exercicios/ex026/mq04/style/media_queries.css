@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* Other Versions of Media */
+
+/* 
+Pequenas telas: até 600px
+Celulares: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992 até 1200px
+Grandes telas: acima de 1200px
+
+*/
+
+@media print{
+    /* Impressão */
+    
+    /* background-image não sai em impressões */
+    /* body{
+        background: black url("../image/back-print.jpg") no-repeat center center / cover fixed;
+    } */
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    main{
+        color: black;
+        text-shadow: none;
+        border: 5px ridge goldenrod;
+    }
+
+    main::after{
+        content: "Impressão feita nos exercicios do curso em video";
+        text-decoration: overline;
+    }
+
+    #print{
+        display: block;
+    }
+    #phone{
+        display: none;
+    }
+
+}
+
+/* 
+
+Como foi pensado no Mobile First, as duas primeiras configurações foram feitas no aquivo css padrão, tornando essas desnecessárias na configuração de medias queries
+
+@media screen and (max-width:600px){
+
+}
+
+@media screen and (min-width:601px) and (max-width:768px) {
+    
+}
+
+ */
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    /* Tablet */
+    body{
+        background: black url("../image/back-tablet.jpg") no-repeat center center / cover fixed ;
+    }
+    #tablet{
+        display: block;
+    }
+    #phone{
+        display: none;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+    /* Desktop */
+    body{
+        background: black url("../image/back-pc.jpg") no-repeat center center / cover fixed;
+    }
+    #pc{
+        display: block;
+    }
+    #phone{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:1201px) {
+    /* Telas grandes */
+    body{
+        background: black url("../image/back-tv.jpg") no-repeat center center / cover fixed;
+    }
+    #tv{
+        display: block;
+    }
+    #phone{
+        display: none;
+    }
+}
