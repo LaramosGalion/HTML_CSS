@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo com media queries</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="stylesheet" href="./style/responsive.css" media="screen">
+</head>
+<body onresize="changeSize()">
+
+    <header>
+
+        <h1>Menu responsivo</h1>
+
+        <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</span>
+
+        <nav id="hotbar">
+            <menu>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </menu>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <article>
+
+            <h1>Exemplo de texto</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, aspernatur eveniet necessitatibus doloremque odio deserunt tempora quasi, non obcaecati tempore cum voluptates aperiam culpa consequatur rem excepturi atque maiores? Est?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem modi perspiciatis amet nesciunt! Ad itaque placeat dolorum, laboriosam nobis harum, voluptatibus autem ea labore deserunt expedita ex quisquam fugit ab in sapiente hic, nesciunt magni a odio mollitia iusto nulla quia! Maxime quam ipsum magni saepe temporibus repudiandae aliquam vero eligendi ratione maiores reiciendis enim, commodi error fugit explicabo inventore. Unde inventore eius, quis qui amet magnam est placeat iure maiores id iste! Consectetur unde facere at nihil alias hic consequuntur odit praesentium numquam? Ab quo animi ipsam sunt ullam amet consectetur accusamus veritatis qui? Quaerat in nemo ipsum necessitatibus?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum quidem provident tempore, voluptatibus a, reiciendis assumenda repellat facere facilis eaque harum maiores fugiat esse eum mollitia similique suscipit ullam.</p>
+
+        </article>
+
+    </main>
+
+    <script>
+
+        function changeSize(){
+            if ( window.innerWidth >= 768){
+                hotbar.style.display = "block"; 
+            }else{
+                hotbar.style.display ="none";
+            }
+
+            
+        }
+
+        function clickMenu(){
+            if (hotbar.style.display == "block"){
+                hotbar.style.display = "none";
+            }else{
+                hotbar.style.display = "block";
+            }
+
+        }
+        
+    </script>
+
+</body>
+</html>

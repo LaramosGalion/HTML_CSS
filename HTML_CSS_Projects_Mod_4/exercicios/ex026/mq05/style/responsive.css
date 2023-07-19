@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@media (min-width:768px){
+    
+    span#burguer{
+        display: none;
+    }
+
+    nav{
+        display: block; 
+    }
+
+    menu{
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        background-color: dimgray;
+        padding: 5px;
+    }
+
+    nav > menu > li a{
+        display:block;
+        width: 100px;
+        border: 2px ridge black;
+     
+    }
+
+    main {
+        width: 768px; 
+    }
+
+}
